@@ -3,7 +3,7 @@ export default function SchemaJsonLd() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Sineklik Almanya",
-    "description": "Türkiye'den Almanya'ya sineklik, plise perde, jaluzi perde teslimatı. Ölçüye özel üretim, demonte paketlenmiş gönderim.",
+    "description": "Türkiye'den Almanya'ya sineklik, plise perde, jaluzi perde teslimatı. Ölçüye özel üretim, demonte paketlenmiş gönderim. Berlin, Münih, Hamburg, Köln, Frankfurt, Stuttgart, Düsseldorf ve tüm Almanya bölgelerine hizmet.",
     "url": "https://sineklikalmanya.com.tr",
     "telephone": "+905403363873",
     "address": {
@@ -16,10 +16,60 @@ export default function SchemaJsonLd() {
       "latitude": "52.5200",
       "longitude": "13.4050"
     },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Germany"
-    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Berlin"
+      },
+      {
+        "@type": "City",
+        "name": "Münih"
+      },
+      {
+        "@type": "City",
+        "name": "Hamburg"
+      },
+      {
+        "@type": "City",
+        "name": "Köln"
+      },
+      {
+        "@type": "City",
+        "name": "Frankfurt"
+      },
+      {
+        "@type": "City",
+        "name": "Stuttgart"
+      },
+      {
+        "@type": "City",
+        "name": "Düsseldorf"
+      },
+      {
+        "@type": "City",
+        "name": "Dortmund"
+      },
+      {
+        "@type": "City",
+        "name": "Essen"
+      },
+      {
+        "@type": "City",
+        "name": "Leipzig"
+      },
+      {
+        "@type": "City",
+        "name": "Hannover"
+      },
+      {
+        "@type": "City",
+        "name": "Nürnberg"
+      },
+      {
+        "@type": "Country",
+        "name": "Germany"
+      }
+    ],
     "priceRange": "€€",
     "openingHours": "Mo-Sa 09:00-18:00",
     "image": "https://sineklikalmanya.com.tr/og-image.jpg",
@@ -29,7 +79,8 @@ export default function SchemaJsonLd() {
     "potentialAction": {
       "@type": "ContactAction",
       "telephone": "+905403363873",
-      "contactType": "customer service"
+      "contactType": "customer service",
+      "availableLanguage": ["de", "tr", "en"]
     },
     "product": [
       {
@@ -67,7 +118,8 @@ export default function SchemaJsonLd() {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
       "reviewCount": "247"
-    }
+    },
+    "availableLanguage": ["de", "tr", "en"]
   };
 
   return (
